@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="logsReport"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView">
+        <property name="url" value="classpath:onyxomLogsReport.jrxml" />
+        <!--<property name="url" value="classpath:logsReport.jrxml" />-->
+        <property name="reportDataKey" value="datasource" />
+    </bean>
+
+</beans>
